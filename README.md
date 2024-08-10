@@ -8,7 +8,7 @@
   <h3 align="center">Restic Restore Everything</h3>
 
   <p align="center">
-    CLI tool to quickly restore everything that was ever checked into a Restic repo.
+    CLI tool to quickly restore everything that was ever checked into a Restic repo (unless they've been forgotten/purged).
     <br />
     <br />
     <a href="assets/demo.mp4">View Demo</a>
@@ -25,8 +25,18 @@
 
 https://github.com/user-attachments/assets/cf3998e2-6805-4e8e-9282-2a5f5516ee20
 
-Restic Restore Everything is a Command-Line Interface tool designed to restore every file that has ever been checked into a [Restic](https://restic.net/) repository. 
+> THIS IS NOT A LOST DATA RECOVERY PROGRAM! It can not restore files from restic that restic has forgotten or purged!
 
+Restic Restore Everything is a Command-Line Interface tool designed to restore every file that has ever been checked into a [Restic](https://restic.net/) repository - **and that is remembered**. This is useful for repo that are used as a fire-and-forget repositories; i.e. repositories that periodically receive files which are removed from the source immediately after completed backup and a means to save space.
+
+More concrete example: Let's say I have a server that has about 1 TB of disk space available. After some time, the avaialble disk space runs out. So I set up an external storage bucket over at AWS or Backblaze in which I init a new restic repository. I'll then setup some script on my server that periodically backs up files that are no longer needed on the server to this bucket repository (like old documents, images, etc). After the backup completes, the files are deleted from the server to free up space, but live on long-term in the bucket repository.
+
+Restic as of August 2024 does not offer an easy to use way of restoring all data that is stored this way. It is a very specific usecase, but from what I could find in the forums, it is not unique to me. 
+
+
+### Limitations
+
+This script can only restore files that restic remembers. It **CAN NOT** magically restore purged or forgotten data.
 
 <!-- GETTING STARTED -->
 ## Getting Started
