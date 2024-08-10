@@ -45,7 +45,8 @@ This script can only restore files that restic remembers. It **CAN NOT** magical
 
 Before you begin using Restic Restore Everything, you will need:
 
-- Restic (v0.16 or newer) installed on your machine
+- Restic (v0.16 or newer) installed on your machine (on Fedora: `sudo dnf install restic`)
+- dotnet 8 runtime (on Fedora: `sudo dnf install dotnet-runtime-8.0`)
 - Access to the restic repository you wish to restore from
 - Sufficient storage space for the restored files
 
@@ -53,7 +54,7 @@ Before you begin using Restic Restore Everything, you will need:
 ### Installation
 
 1. Goto release page and download the [latest release](https://github.com/OminousLama/restic-restore-everything/releases/latest)
-2. Extract the `rrev` binary to a directory of your choice
+2. Extract the `rrev` directory to a directory of your choice (make sure the dlls and other files are also in same directory)
 3. Give it exec permissions (e.g. `chmod 700 rrev`)
 4. Run the program (e.g. ./rrev --help)
 
@@ -88,6 +89,15 @@ This command will attempt to restore every file in the findings file to the targ
 3. Wait for the program to finish. Keep an eye on the log output in case it failed to restore some files.
 
 4. All done!
+
+
+## Roadmap
+
+Some things I'd like to implement if I find the time for it:
+
+- [ ] Integrated `findings` file generation: Currently, you have to generate the findings file yourself. This isn't a lot of work by any means but it would still be nice to have this step integrated.
+- [ ] Dry-run option: For big repos it would be helpful to see what actions would be run without actually committing to them. According to the Restic docs, it offers a dry-run option for the restore action, but the version I've used during development apparently didn't? Might look into this again.
+- [ ] GUI: I'd like to add some kind of simple GUI for a more streamlined restore process. It would also make the app easier to use for the non-technical folks out there (one might wonder tho how they got a restic repo in the first place). 
 
 
 <!-- ACKNOWLEDGMENTS -->
