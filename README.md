@@ -1,14 +1,3 @@
-<a id="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -21,14 +10,12 @@
   <p align="center">
     CLI tool to quickly restore everything that was ever checked into a Restic repo.
     <br />
-    <a href="https://github.com/OminousLama/restic-restore-everything/"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/OminousLama/restic-restore-everything">View Demo</a>
+    <a href="assets/demo.mp4">View Demo</a>
     ·
-    <a href="https://github.com/OminousLama/restic-restore-everything">Report Bug</a>
+    <a href="https://github.com/OminousLama/restic-restore-everything/issues/new?assignees=&labels=&projects=&template=bug_report.md&title=">Report Bug</a>
     ·
-    <a href="https://github.com/OminousLama/restic-restore-everything">Request Feature</a>
+    <a href="https://github.com/OminousLama/restic-restore-everything/issues/new?assignees=&labels=&projects=&template=feature_request.md&title=">Request Feature</a>
   </p>
 </div>
 
@@ -55,7 +42,7 @@ Before you begin using Restic Restore Everything, you will need:
 
 ### Installation
 
-1. Goto release page and download the [latest release]()
+1. Goto release page and download the [latest release](https://github.com/OminousLama/restic-restore-everything/releases/latest)
 2. Extract the `rrev` binary to a directory of your choice
 3. Give it exec permissions (e.g. `chmod 700 rrev`)
 4. Run the program (e.g. ./rrev --help)
