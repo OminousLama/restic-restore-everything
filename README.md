@@ -36,7 +36,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Demo Video]](assets/demo.mp4)
+https://github.com/user-attachments/assets/cf3998e2-6805-4e8e-9282-2a5f5516ee20
 
 Restic Restore Everything is a Command-Line Interface tool designed to restore every file that has ever been checked into a [Restic](https://restic.net/) repository. 
 
