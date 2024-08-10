@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/OminousLama/restic-restore-everything">
-    <img src="assets/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Restic Restore Everything</h3>
