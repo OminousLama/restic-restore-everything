@@ -8,7 +8,7 @@
   <h3 align="center">Restic Restore Everything</h3>
 
   <p align="center">
-    CLI tool to quickly restore everything that was ever checked into a Restic repo (unless they've been forgotten/purged).
+    CLI to restore everything that was ever checked into a Restic repo.
     <br />
     <br />
     <a href="assets/demo.mp4">View Demo</a>
